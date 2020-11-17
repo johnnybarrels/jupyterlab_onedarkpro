@@ -1,10 +1,6 @@
-<style>
-    img {border-radius: 5px}
-</style>
-
-<span style='overflow: hidden'>
-    <img src='assets/img/icon-one-dark-pro.png' style='max-width: 75px; float: left; margin-top: 10px'>
-    <h1 style='position: relative; left: 20px;'>One Dark Pro</h1>
+<span>
+    <img src='assets/img/icon-one-dark-pro.png' width='75px'>
+    <h1>One Dark Pro for JupyterLab</h1>
 </span>
 
 A full IDE build of [VSCode's One Dark Pro](https://marketplace.visualstudio.com/items?itemName=zhuangtongfa.Material-theme) theme for JupyterLab
@@ -19,21 +15,21 @@ Extends to:
 
 - **Help view:**
 
-<img src='assets/img/help-view.png' style='width: 650px'>
+<img src='assets/img/help-view.png' width='650px'>
 
 - **Tooltips:**
 
-<img src='assets/img/tooltips.png' style='width: 650px'>
+<img src='assets/img/tooltips.png' width='650px'>
 
 - **Tracebacks:**
 
-<img src='assets/img/traceback.png' style='width: 650px'>
+<img src='assets/img/traceback.png' width='650px'>
 
 - **and more**
 
 ## Prerequisites
 
-* JupyterLab
+* JupyterLab 2
 
 ## Installation
 
