@@ -23,7 +23,7 @@ Extends to:
 
 - **Tracebacks:**
 
-<img src='assets/img/traceback.png' width='650px'>
+<img src='assets/img/traceback.png' width='750px'>
 
 - **and more**
 
