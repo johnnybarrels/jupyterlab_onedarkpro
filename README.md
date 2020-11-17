@@ -33,9 +33,24 @@ Extends to:
 
 ## Installation
 
+As with any JupyterLab 1 or 2 extension, a rebuild will be necessary after installing this theme. Each of the installation methods below will automatically prompt for a rebuild.
+
+### Terminal
+
 ```bash
 jupyter labextension install jupyterlab_onedarkpro
 ```
+
+### JupyterLab UI
+
+1. Open JupyterLab
+2. Click on Extensions tab in sidebar (puzzle piece)
+3. Enable Extensions (if not done already)
+4. Seach for `onedarkpro`
+5. Click `Install` under `jupyterlab_onedarkpro`
+6. Follow the prompts to rebuild JupyterLab
+
+<img src='assets/img/install.png' width='350px'>
 
 ## Development
 
