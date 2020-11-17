@@ -574,10 +574,10 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 	vertical-align: middle; 
 } */
 
+/* Highlighted line in tab-completion menu */
 .jp-Completer-item.jp-mod-active {
-
-	color: var(--one-dark-fg);
-	background: var(--one-dark-bg-1);
+	color: var(--one-dark-off-white);
+	background: var(--one-dark-gray-1);
 }
 
 
