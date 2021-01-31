@@ -1,6 +1,12 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);
 /*-----------------------------------------------------------------------------
 | Copyright (c) Jupyter Development Team.
 | Distributed under the terms of the Modified BSD License.
+|----------------------------------------------------------------------------*/
+
+/*-----------------------------------------------------------------------------
+| One Dark Pro theme created by johnnybarrels
+| https://github.com/johnnybarrels/jupyterlab_onedarkpro
 |----------------------------------------------------------------------------*/
 
 /*
@@ -47,6 +53,8 @@ all of MD as it is not optimized for dense, information rich UIs.
   --one-dark-gray-1: #3E4451;
   --one-dark-gray-2: #4E576A;
   --one-dark-gray-3: #555e73;
+  --one-dark-button-gray: #7F848E;
+  --one-dark-comment-gray: #7F848E;
   --one-dark-off-white: #EEEEEE;
   
 
@@ -57,15 +65,16 @@ all of MD as it is not optimized for dense, information rich UIs.
 	--jp-mirror-editor-def-color: var(--one-dark-red-1);
 	--jp-mirror-editor-variable-color: var(--one-dark-mono-1);
 	--jp-mirror-editor-variable-2-color: var(--one-dark-orange-2);
-	--jp-mirror-editor-variable-3-color: var(--md-grey-600);
+	--jp-mirror-editor-variable-3-color: var(--one-dark-purple);
 	--jp-mirror-editor-punctuation-color: var(--one-dark-mono-1);
 	--jp-mirror-editor-property-color: var(--one-dark-blue);
 	--jp-mirror-editor-operator-color: var(--one-dark-cyan);
-	--jp-mirror-editor-comment-color: var(--one-dark-gray-2);
+	/* --jp-mirror-editor-comment-color: var(--one-dark-gray-2); */
+	--jp-mirror-editor-comment-color: var(--one-dark-comment-gray);
 	--jp-mirror-editor-string-color: var(--one-dark-green);
-	--jp-mirror-editor-string-2-color: #f50;
+	--jp-mirror-editor-string-2-color: var(--one-dark-red-1);
 	--jp-mirror-editor-meta-color: var(--one-dark-cyan);
-	--jp-mirror-editor-qualifier-color: #555;
+	--jp-mirror-editor-qualifier-color: var(--one-dark-accent);
 	--jp-mirror-editor-builtin-color: var(--one-dark-cyan);
 	--jp-mirror-editor-bracket-color: var(--one-dark-mono-1);
 	--jp-mirror-editor-tag-color: var(--one-dark-red-1);
@@ -268,10 +277,14 @@ all of MD as it is not optimized for dense, information rich UIs.
 	--jp-layout-color4: var(--one-dark-bg-1);
 
   /* Colour for all the SVG buttons (sidebar, topbar etc) */
-	--jp-inverse-layout-color3: #7F848E;
+  --jp-icon-contrast-color0: var(--one-dark-button-gray);
+  --jp-icon-contrast-color1: var(--one-dark-button-gray);
+  --jp-inverse-layout-color1: white;
+  --jp-inverse-layout-color2: var(--one-dark-button-gray);
+	--jp-inverse-layout-color3: var(--one-dark-button-gray);
 
 	/* Brand/accent */
-	--jp-brand-color0: var(--md-blue-700);
+	--jp-brand-color0: var(--one-dark-blue);
 	/* selected cell colour, bar to left of cell, selected file in browser */
 	--jp-brand-color1: var(--one-dark-blue);
 	--jp-brand-color2: var(--one-dark-off-white);
@@ -352,12 +365,14 @@ all of MD as it is not optimized for dense, information rich UIs.
 /* MAIN BACKGROUND COLOUR */
 .jp-Notebook {
   background: var(--one-dark-bg-1);
+  padding-top: 11px;
 }
 
 /* Preventing annoying line wrapping from overflows in tooltip (Shift+Tab) */
 .jp-Tooltip {
   max-width: 660px !important;
   overflow: auto;
+  border-radius: 4px;
 }
 .jp-Tooltip.jp-HoverBox > div.jp-Tooltip-content > pre {
   white-space: pre !important;
@@ -709,7 +724,6 @@ HTML, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form
   -webkit-font-smoothing: subpixel-antialiased !important;
 }
 
-
 /*-----------------------------------------------------------------------------
 | Copyright (c) Jupyter Development Team.
 | Distributed under the terms of the Modified BSD License.
@@ -725,4 +739,3 @@ pre {
   font-size: var(--jp-code-font-size) !important;
   line-height: var(--jp-code-line-height);
 }
-
