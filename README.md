@@ -29,11 +29,11 @@ Extends to:
 
 ## Prerequisites
 
-* JupyterLab 2
+* JupyterLab 3
 
 ## Installation
 
-As with any JupyterLab 1 or 2 extension, a rebuild will be necessary after installing this theme. Each of the installation methods below will automatically prompt for a rebuild.
+As with any JupyterLab extension, a rebuild will be necessary after installing this theme. Each of the installation methods below will automatically prompt for a rebuild.
 
 ### Terminal
 
