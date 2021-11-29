@@ -48,14 +48,14 @@ all of MD as it is not optimized for dense, information rich UIs.
 	--one-dark-orange-1: #D29B62;
 	--one-dark-mono-3: #495163;
 	--one-dark-accent: #AEB9F5;
-  --one-dark-bg-1: #21252b;
-  --one-dark-bg-2: #282c34;
-  --one-dark-gray-1: #3E4451;
-  --one-dark-gray-2: #4E576A;
-  --one-dark-gray-3: #555e73;
-  --one-dark-button-gray: #7F848E;
-  --one-dark-comment-gray: #7F848E;
-  --one-dark-off-white: #EEEEEE;
+	--one-dark-bg-1: #21252b;
+	--one-dark-bg-2: #282c34;
+	--one-dark-gray-1: #3E4451;
+	--one-dark-gray-2: #4E576A;
+	--one-dark-gray-3: #555e73;
+	--one-dark-button-gray: #7F848E;
+	--one-dark-comment-gray: #7F848E;
+	--one-dark-off-white: #EEEEEE;
   
 
   	/* Code mirror SYNTAX HIGHLIGHTING styles */
@@ -83,13 +83,13 @@ all of MD as it is not optimized for dense, information rich UIs.
 	--jp-mirror-editor-quote-color: var(--one-dark-green);
 	--jp-mirror-editor-link-color: var(--one-dark-red-1);
 	--jp-mirror-editor-error-color: var(--one-dark-red-1);
-  --jp-mirror-editor-hr-color: var(--one-dark-mono-1);
+  	--jp-mirror-editor-hr-color: var(--one-dark-mono-1);
 
-  --markdown-font: "Roboto";
+ 	 --markdown-font: "Roboto";
 
-  /* The space to the left of cells (command mode selector) */
-  --jp-inpromt-colour: var(--one-dark-bg-1);
-  --jp-cell-prompt-width: 75px;
+  	/* The space to the left of cells (command mode selector) */
+ 	 --jp-inpromt-colour: var(--one-dark-bg-1);
+  	--jp-cell-prompt-width: 75px;
 
 	/* Cell specific styles */
 	--jp-cell-padding: 0px 10px 10px 0px;
@@ -114,8 +114,8 @@ all of MD as it is not optimized for dense, information rich UIs.
 	--jp-cell-inprompt-font-color: var(--one-dark-mono-1);
 	--jp-cell-outprompt-font-color: var(--one-dark-gray-2);
 
-  --jp-editor-selected-background: var(--one-dark-bg-1);
-  --jp-editor-selected-focused-background: var(--one-dark-bg-1);
+  	--jp-editor-selected-background: var(--one-dark-bg-1);
+  	--jp-editor-selected-focused-background: var(--one-dark-bg-1);
   
   /* Elevation */
 	--jp-shadow-base-lightness: 32;
@@ -213,7 +213,7 @@ all of MD as it is not optimized for dense, information rich UIs.
 	--jp-content-line-height: 1.6;
 	--jp-content-font-scale-factor: 1.2;
 	--jp-content-font-size0: 0.83333em;
-	--jp-content-font-size1: 16px;
+	--jp-content-font-size1: 16px !important;
 	/* Base font size */
 	--jp-content-font-size2: 1.2em;
 	--jp-content-font-size3: 1.44em;
@@ -256,7 +256,7 @@ all of MD as it is not optimized for dense, information rich UIs.
 	--jp-code-presentation-font-size: 14px;
 	--jp-code-cursor-width0: 2px;
 	--jp-code-cursor-width1: 2px;
-  --jp-code-cursor-width2: 4px;
+  	--jp-code-cursor-width2: 4px;
 
 
 	/* Layout
@@ -266,10 +266,10 @@ all of MD as it is not optimized for dense, information rich UIs.
    */
 	/* Edit the background and stuff */
 	--jp-layout-color0: var(--one-dark-bg-1);
-  --jp-layout-color1: var(--one-dark-bg-1);
+ 	--jp-layout-color1: var(--one-dark-bg-1);
   
-  /* these are for unselected tabs amongst other things... */
-  --jp-layout-color2: var(--one-dark-bg-1);
+  	/* these are for unselected tabs amongst other things... */
+  	--jp-layout-color2: var(--one-dark-bg-1);
   
 	/* this is for the area behind the tabs of the notebooks open */
 	--jp-layout-color3: var(--one-dark-bg-1);
@@ -277,10 +277,10 @@ all of MD as it is not optimized for dense, information rich UIs.
 	--jp-layout-color4: var(--one-dark-bg-1);
 
   /* Colour for all the SVG buttons (sidebar, topbar etc) */
-  --jp-icon-contrast-color0: var(--one-dark-button-gray);
-  --jp-icon-contrast-color1: var(--one-dark-button-gray);
-  --jp-inverse-layout-color1: white;
-  --jp-inverse-layout-color2: var(--one-dark-button-gray);
+	--jp-icon-contrast-color0: var(--one-dark-button-gray);
+	--jp-icon-contrast-color1: var(--one-dark-button-gray);
+	--jp-inverse-layout-color1: white;
+	--jp-inverse-layout-color2: var(--one-dark-button-gray);
 	--jp-inverse-layout-color3: var(--one-dark-button-gray);
 
 	/* Brand/accent */
@@ -319,10 +319,20 @@ all of MD as it is not optimized for dense, information rich UIs.
 	/* Notebook specific styles */
 	--jp-notebook-padding: 0px 10px 0px 0px;
 	/* default 10 */
-	--jp-notebook-scroll-padding: 100px;
+	/* --jp-notebook-scroll-padding: 100px; */
 	--jp-notebook-select-background: var(--jp-layout-color1);
 	--jp-notebook-multiselected-color: rgba(33, 150, 243, .24);
-	/* multi select colour */
+	
+  	/* The scroll padding is calculated to fill enough space at the bottom of the
+    notebook to show one single-line cell (with appropriate padding) at the top
+    when the notebook is scrolled all the way to the bottom. We also subtract one
+    pixel so that no scrollbar appears if we have just one single-line cell in the
+    notebook. This padding is to enable a 'scroll past end' feature in a notebook.
+	*/
+    --jp-notebook-scroll-padding: calc(
+      100% - var(--jp-code-font-size) * var(--jp-code-line-height) -
+        var(--jp-code-padding) - var(--jp-cell-padding) - 1px
+    );
 	/* Rendermime styles */
 	--jp-rendermime-error-background: rgba(244, 67, 54, .28);
 	--jp-rendermime-table-row-background: var(--one-dark-bg-2);
@@ -611,8 +621,16 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 
 /* Markdown inline code */
 .jp-RenderedHTMLCommon code, .jp-RenderedHTMLCommon pre {
-  padding: 1px 3px;
+  padding: 0px 3px;
+  background-color: white;
   /* font-size: var() 1em !important; */
+}
+
+.jp-RenderedHTMLCommon.jp-RenderedMarkdown.jp-MarkdownOutput p code {
+	font-size: var(--jp-code-font-size) !important;
+/* 	color: var(--one-dark-cyan); */
+	background-color: var(--one-dark-gray-1);
+	border-radius: 4px;
 }
 
 .jp-MarkdownOutput {
@@ -622,6 +640,10 @@ div.CodeMirror span.CodeMirror-nonmatchingbracket {
 	padding-left: var(--jp-code-padding);
   padding-right: var(--jp-code-padding);
   font-family: var(--markdown-font), "Open Sans", sans-serif;
+}
+
+.jp-RenderedHTMLCommon table {
+	font-size: var(--jp-ui-font-size1)
 }
 
 .cm-s-zenburn {
@@ -723,7 +745,6 @@ HTML, body, div, dl, dt, dd, ul, ol, li, h1, h2, h3, h4, h5, h6, pre, code, form
   text-rendering: auto !important;
   -webkit-font-smoothing: subpixel-antialiased !important;
 }
-
 /*-----------------------------------------------------------------------------
 | Copyright (c) Jupyter Development Team.
 | Distributed under the terms of the Modified BSD License.
@@ -736,6 +757,6 @@ kbd,
 samp,
 pre {
   font-family: var(--jp-code-font-family);
-  font-size: var(--jp-code-font-size) !important;
+  font-size: var(--jp-code-font-size);
   line-height: var(--jp-code-line-height);
 }
