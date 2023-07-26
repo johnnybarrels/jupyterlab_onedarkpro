@@ -11,7 +11,7 @@
     "bugs": {
         "url": "https://github.com/onepan/jupyterlab_onedarkpro/issues"
     },
-    "license": "BSD-3-Clause",
+    "license": "MIT",
     "author": {
         "name": "johnnybarrels",
         "email": ""
