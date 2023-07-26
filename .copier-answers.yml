@@ -10,5 +10,5 @@ labextension_name: jupyterlab_onedarkpro
 project_short_description: One Dark Pro for JupyterLab
 python_name: jupyterlab_onedarkpro
 repository: https://github.com/onepan/jupyterlab_onedarkpro
-test: true
+test: false
 

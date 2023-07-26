@@ -1,6 +1,3 @@
-<<<<<<< HEAD
-.DS_Store
-=======
 *.bundle.*
 lib/
 node_modules/
@@ -13,10 +10,6 @@ node_modules/
 jupyterlab_onedarkpro/labextension
 # Version file is handled by hatchling
 jupyterlab_onedarkpro/_version.py
-
-# Integration tests
-ui-tests/test-results/
-ui-tests/playwright-report/
 
 # Created by https://www.gitignore.io/api/python
 # Edit at https://www.gitignore.io/?templates=python
@@ -126,4 +119,3 @@ dmypy.json
 
 # Yarn cache
 .yarn/
->>>>>>> 1605520 (initial)
