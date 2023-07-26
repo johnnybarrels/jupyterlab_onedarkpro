@@ -1,13 +1,14 @@
-@import url(https://fonts.googleapis.com/css2?family=Roboto&display=swap);
-/*-----------------------------------------------------------------------------
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+/* -----------------------------------------------------------------------------
 | Copyright (c) Jupyter Development Team.
 | Distributed under the terms of the Modified BSD License.
-|----------------------------------------------------------------------------*/
+|---------------------------------------------------------------------------- */
 
-/*-----------------------------------------------------------------------------
+/* -----------------------------------------------------------------------------
 | One Dark Pro theme created by johnnybarrels
 | https://github.com/johnnybarrels/jupyterlab_onedarkpro
-|----------------------------------------------------------------------------*/
+|---------------------------------------------------------------------------- */
 
 /*
 The following CSS variables define the main, public API for styling JupyterLab.
@@ -37,7 +38,7 @@ all of MD as it is not optimized for dense, information rich UIs.
   --one-dark-mono-2: #828997;
   --one-dark-red-1: #e26b73;
   --one-dark-mono-1: #abb2c0;
-  --one-dark-silver: #aaaaaa;
+  --one-dark-silver: #aaa;
   --one-dark-purple: #c775df;
   --one-dark-orange-2: #e6c176;
   --one-dark-gutter: #666d7a;
@@ -54,7 +55,7 @@ all of MD as it is not optimized for dense, information rich UIs.
   --one-dark-gray-3: #555e73;
   --one-dark-button-gray: #7f848e;
   --one-dark-comment-gray: #7f848e;
-  --one-dark-off-white: #eeeeee;
+  --one-dark-off-white: #eee;
 
   /* Code mirror SYNTAX HIGHLIGHTING styles */
   --jp-mirror-editor-keyword-color: var(--one-dark-purple);
@@ -67,6 +68,7 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-mirror-editor-punctuation-color: var(--one-dark-mono-1);
   --jp-mirror-editor-property-color: var(--one-dark-blue);
   --jp-mirror-editor-operator-color: var(--one-dark-cyan);
+
   /* --jp-mirror-editor-comment-color: var(--one-dark-gray-2); */
   --jp-mirror-editor-comment-color: var(--one-dark-comment-gray);
   --jp-mirror-editor-string-color: var(--one-dark-green);
@@ -82,7 +84,6 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-mirror-editor-link-color: var(--one-dark-red-1);
   --jp-mirror-editor-error-color: var(--one-dark-red-1);
   --jp-mirror-editor-hr-color: var(--one-dark-mono-1);
-
   --markdown-font: 'Roboto';
 
   /* The space to the left of cells (command mode selector) */
@@ -91,27 +92,29 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   /* Cell specific styles */
   --jp-cell-padding: 0px 10px 10px 0px;
+
   /* T R B L */
   --jp-cell-collapser-width: 8px;
   --jp-cell-collapser-min-height: 20px;
   --jp-cell-collapser-not-active-hover-opacity: 0.6;
-
   --jp-cell-editor-background: var(--one-dark-bg-2);
+
   /* background colour of all cells */
   --jp-cell-editor-border-color: var(--one-dark-bg-1);
   --jp-cell-editor-box-shadow: inset 0 0 2px var(--one-dark-off-white);
   --jp-cell-editor-active-background: var(--one-dark-bg-2);
+
   /* background colour of current cell */
   --jp-cell-editor-active-border-color: var(--one-dark-gray-2);
+
   /* border colour of current cell */
-  --jp-cell-prompt-font-family: 'JetBrains Mono', Menlo, monospace;
+  --jp-cell-prompt-font-family: 'JetBrains Mono', menlo, monospace;
   --jp-cell-prompt-letter-spacing: 0px;
   --jp-cell-prompt-opacity: 1;
   --jp-cell-prompt-not-active-opacity: 1;
   --jp-cell-prompt-not-active-font-color: var(--one-dark-gray-2);
   --jp-cell-inprompt-font-color: var(--one-dark-mono-1);
   --jp-cell-outprompt-font-color: var(--one-dark-gray-2);
-
   --jp-editor-selected-background: var(--one-dark-bg-1);
   --jp-editor-selected-focused-background: var(--one-dark-bg-1);
 
@@ -123,6 +126,7 @@ all of MD as it is not optimized for dense, information rich UIs.
     var(--jp-shadow-base-lightness),
     0.2
   );
+
   /* shadow under menus */
   --jp-shadow-penumbra-color: rgba(
     var(--jp-shadow-base-lightness),
@@ -130,6 +134,7 @@ all of MD as it is not optimized for dense, information rich UIs.
     var(--jp-shadow-base-lightness),
     0.14
   );
+
   /* glow under menus */
   --jp-shadow-ambient-color: rgba(
     var(--jp-shadow-base-lightness),
@@ -137,6 +142,7 @@ all of MD as it is not optimized for dense, information rich UIs.
     var(--jp-shadow-base-lightness),
     0.12
   );
+
   /* same? */
   --jp-elevation-z0: none;
   --jp-elevation-z1: 0px 2px 1px -1px var(--jp-shadow-umbra-color),
@@ -188,20 +194,21 @@ all of MD as it is not optimized for dense, information rich UIs.
    * in em all things will be computed relative to that body size.
    */
   --jp-ui-font-scale-factor: 1.2;
-  --jp-ui-font-size0: 0.83333em;
+  --jp-ui-font-size0: 0.8333em;
   --jp-ui-font-size1: 13px;
+
   /* Base font size */
   --jp-ui-font-size2: 1.2em;
   --jp-ui-font-size3: 1.44em;
-
   --jp-ui-font-family: 'SF Pro Display', 'Open Sans', -apple-system,
-    BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial, sans-serif,
+    blinkmacsystemfont, 'Segoe UI', helvetica, arial, sans-serif,
     'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 
   /*
    * Use these font colors against the corresponding main layout colors.
    * In a light theme, these go from dark to light.
    */
+
   /* Defaults use Material Design specification */
   --jp-ui-font-color0: var(--one-dark-mono-1);
   --jp-ui-font-color1: var(--one-dark-mono-1);
@@ -227,8 +234,9 @@ all of MD as it is not optimized for dense, information rich UIs.
    */
   --jp-content-line-height: 1.6;
   --jp-content-font-scale-factor: 1.2;
-  --jp-content-font-size0: 0.83333em;
+  --jp-content-font-size0: 0.8333em;
   --jp-content-font-size1: 16px;
+
   /* Base font size */
   --jp-content-font-size2: 1.2em;
   --jp-content-font-size3: 1.44em;
@@ -237,7 +245,6 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   /* This gives a magnification of about 125% in presentation mode over normal. */
   --jp-content-presentation-font-size1: 17px;
-
   --jp-content-heading-line-height: 1;
   --jp-content-heading-margin-top: 1.2em;
   --jp-content-heading-margin-bottom: 0.8em;
@@ -246,14 +253,13 @@ all of MD as it is not optimized for dense, information rich UIs.
   /* Defaults use Material Design specification */
   --jp-content-font-color0: rgba(255, 255, 255, 1);
   --jp-content-font-color1: var(--one-dark-fg);
+
   /* this will colour all markdown and output text */
   --jp-content-font-color2: rgba(255, 255, 255, 0.7);
   --jp-content-font-color3: rgba(255, 255, 255, 0.5);
-
   --jp-content-link-color: var(--one-dark-blue);
-
-  --jp-content-font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI',
-    Helvetica, Arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
+  --jp-content-font-family: -apple-system, blinkmacsystemfont, 'Segoe UI',
+    helvetica, arial, sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji',
     'Segoe UI Symbol';
 
   /* 
@@ -263,11 +269,15 @@ all of MD as it is not optimized for dense, information rich UIs.
    */
   --jp-code-font-size: 14px;
   --jp-code-line-height: 1.5;
+
   /* 17px for 13px base */
   --jp-code-padding: 0.385em;
+
   /* 5px for 13px base */
-  --jp-code-font-family: 'JetBrains Mono', 'Fira Code', Menlo, monospace;
-  /*--jp-code-font-family: 'Source Code Pro', monospace;*/
+  --jp-code-font-family: 'JetBrains Mono', 'Fira Code', menlo, monospace;
+
+  /* --jp-code-font-family: 'Source Code Pro', monospace; */
+
   /* This gives a magnification of about 125% in presentation mode over normal. */
   --jp-code-presentation-font-size: 14px;
   --jp-code-cursor-width0: 2px;
@@ -279,6 +289,7 @@ all of MD as it is not optimized for dense, information rich UIs.
    * The following are the main layout colors use in JupyterLab. In a light
    * theme these would go from light to dark.
    */
+
   /* Edit the background and stuff */
   --jp-layout-color0: var(--one-dark-bg-1);
   --jp-layout-color1: var(--one-dark-bg-1);
@@ -288,7 +299,6 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   /* this is for the area behind the tabs of the notebooks open */
   --jp-layout-color3: var(--one-dark-bg-1);
-
   --jp-layout-color4: var(--one-dark-bg-1);
 
   /* Colour for all the SVG buttons (sidebar, topbar etc) */
@@ -300,11 +310,11 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   /* Brand/accent */
   --jp-brand-color0: var(--one-dark-blue);
+
   /* selected cell colour, bar to left of cell, selected file in browser */
   --jp-brand-color1: var(--one-dark-blue);
   --jp-brand-color2: var(--one-dark-off-white);
   --jp-brand-color3: var(--md-blue-100);
-
   --jp-accent-color0: var(--md-green-700);
   --jp-accent-color1: var(--md-green-500);
   --jp-accent-color2: var(--md-green-300);
@@ -315,17 +325,14 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-warn-color1: var(--md-orange-500);
   --jp-warn-color2: var(--md-orange-300);
   --jp-warn-color3: var(--md-orange-100);
-
   --jp-error-color0: var(--md-red-700);
   --jp-error-color1: var(--md-red-500);
   --jp-error-color2: var(--md-red-300);
   --jp-error-color3: var(--md-red-100);
-
   --jp-success-color0: var(--md-green-700);
   --jp-success-color1: var(--md-green-500);
   --jp-success-color2: var(--md-green-300);
   --jp-success-color3: var(--md-green-100);
-
   --jp-info-color0: var(--md-cyan-700);
   --jp-info-color1: var(--md-cyan-500);
   --jp-info-color2: var(--md-cyan-300);
@@ -333,11 +340,14 @@ all of MD as it is not optimized for dense, information rich UIs.
 
   /* Notebook specific styles */
   --jp-notebook-padding: 0px 10px 0px 0px;
+
   /* default 10 */
   --jp-notebook-scroll-padding: 100px;
   --jp-notebook-select-background: var(--jp-layout-color1);
   --jp-notebook-multiselected-color: rgba(33, 150, 243, 0.24);
+
   /* multi select colour */
+
   /* Rendermime styles */
   --jp-rendermime-error-background: rgba(244, 67, 54, 0.28);
   --jp-rendermime-table-row-background: var(--one-dark-bg-2);
@@ -366,380 +376,18 @@ all of MD as it is not optimized for dense, information rich UIs.
   --jp-input-active-border-color: var(--jp-brand-color1);
 
   /* General editor styles */
-  --jp-editor-selected-background: var(--jp-layout-color2);
-  --jp-editor-selected-focused-background: rgba(33, 150, 243, 0.24);
+
+  /* --jp-editor-selected-focused-background: rgba(33, 150, 243, 0.24); */
   --jp-editor-cursor-color: var(--one-dark-mono-1);
 
   /* Vega extension styles */
   --jp-vega-background: var(--one-dark-bg-1);
 
-  /*--jp-SideBar-background: var(--one-dark-bg-1);*/
+  /* --jp-SideBar-background: var(--one-dark-bg-1); */
   --jp-main-dock-panel-background: var(--one-dark-bg-1);
 }
 
-/* MAIN BACKGROUND COLOUR */
-.jp-Notebook {
-  background: var(--one-dark-bg-1);
-  padding-top: 11px;
-}
-
-/* Preventing annoying line wrapping from overflows in tooltip (Shift+Tab) */
-.jp-Tooltip {
-  max-width: 660px !important;
-  overflow: auto;
-  border-radius: 4px;
-}
-.jp-Tooltip.jp-HoverBox > div.jp-Tooltip-content > pre {
-  white-space: pre !important;
-}
-
-/* CodeMirror Syntax Highlighting, unset bold */
-.jp-RenderedText pre .ansi-bold {
-  font-weight: normal !important;
-}
-
-/* ------------------------------------------------------------------- */
-/* StdError (Tracebacks)                                               */
-/* ------------------------------------------------------------------- */
-
-/* StdError background */
-.jp-OutputArea-output[data-mime-type='application/vnd.jupyter.stderr'] {
-  /* background: unset !important; */
-  background: rgba(226, 107, 115, 0.09) !important;
-}
-
-/* Traceback Syntax Highlighting */
-
-/* Headings, eg. `Docstring:` */
-.jp-OutputArea-output[data-mime-type='application/vnd.jupyter.stderr']
-  .ansi-red-fg,
-.jp-OutputArea-output[data-mime-type='application/vnd.jupyter.stderr']
-  .ansi-red-intense-fg {
-  color: var(--one-dark-red-1) !important;
-  font-weight: bold !important;
-}
-/* Punctuation & operators */
-.jp-OutputArea-output[data-mime-type='application/vnd.jupyter.stderr']
-  .ansi-yellow-fg,
-.jp-OutputArea-output[data-mime-type='application/vnd.jupyter.stderr']
-  .ansi-yellow-intense-fg {
-  color: var(--one-dark-cyan) !important;
-}
-/* Functions */
-.jp-OutputArea-output[data-mime-type='application/vnd.jupyter.stderr']
-  .ansi-cyan-fg {
-  color: var(--one-dark-blue) !important;
-}
-/* Numbers */
-.jp-OutputArea-output[data-mime-type='application/vnd.jupyter.stderr']
-  .ansi-cyan-intense-fg {
-  color: var(--one-dark-orange-1) !important;
-}
-/* Strings, brackets and some function arguments */
-.jp-OutputArea-output[data-mime-type='application/vnd.jupyter.stderr']
-  .ansi-blue-fg,
-.jp-OutputArea-output[data-mime-type='application/vnd.jupyter.stderr']
-  .ansi-blue-intense-fg {
-  color: var(--one-dark-green) !important;
-}
-/* Paths and keywords */
-.jp-OutputArea-output[data-mime-type='application/vnd.jupyter.stderr']
-  .ansi-green-fg,
-.jp-OutputArea-output[data-mime-type='application/vnd.jupyter.stderr']
-  .ansi-green-intense-fg {
-  color: var(--one-dark-purple) !important;
-}
-
-/* ------------------------------------------------------------------- */
-/* Other CodeMirror Syntax Highlighting                                */
-/* ------------------------------------------------------------------- */
-/* e.g. when you `?` something (to get help menu) */
-
-/* Headings, eg. `Docstring:` */
-.jp-RenderedText[data-mime-type='text/plain'] .ansi-red-fg,
-.jp-RenderedText[data-mime-type='text/plain'] .ansi-red-intense-fg {
-  color: var(--one-dark-blue) !important;
-}
-/* Punctuation & operators */
-.jp-RenderedText[data-mime-type='text/plain'] .ansi-yellow-fg,
-.jp-RenderedText[data-mime-type='text/plain'] .ansi-yellow-intense-fg {
-  color: var(--one-dark-cyan) !important;
-}
-/* Numbers */
-.jp-RenderedText[data-mime-type='text/plain'] .ansi-cyan-fg,
-.jp-RenderedText[data-mime-type='text/plain'] .ansi-cyan-intense-fg {
-  color: var(--one-dark-orange-1) !important;
-}
-/* Strings */
-.jp-RenderedText[data-mime-type='text/plain'] .ansi-blue-fg,
-.jp-RenderedText[data-mime-type='text/plain'] .ansi-blue-intense-fg {
-  color: var(--one-dark-green) !important;
-}
-/* Keywords */
-.jp-RenderedText[data-mime-type='text/plain'] .ansi-green-fg,
-.jp-RenderedText[data-mime-type='text/plain'] .ansi-green-intense-fg {
-  color: var(--one-dark-purple) !important;
-}
-
-/* Toolbar and right-click menu hover */
-li.lm-Menu-item.p-Menu-item:not([data-type='separator']):hover {
-  background-color: var(--one-dark-gray-1);
-}
-
-.lm-CommandPalette-item.lm-mod-disabled {
-  color: var(--one-dark-gray-3);
-}
-
-.lm-CommandPalette-item.lm-mod-active {
-  background: var(--one-dark-gray-1);
-}
-
-.lm-CommandPalette-item.lm-mod-active:hover:not(.lm-mod-disabled) {
-  background: var(--one-dark-gray-1);
-}
-
-.lm-CommandPalette-item:hover:not(.lm-mod-active):not(.lm-mod-disabled) {
-  background: var(--one-dark-gray-1);
-  cursor: pointer;
-}
-
-/* Change the colour of linenumbers */
-.CodeMirror-linenumber {
-  padding: 0 3px 0 5px;
-  min-width: 20px;
-  text-align: center;
-  color: var(--one-dark-gray-2);
-  background-color: var(--one-dark-bg-2);
-  white-space: nowrap;
-}
-
-/* This is the region where the linenumbers are */
-.CodeMirror-gutters {
-  border-right: none;
-  background-color: var(--one-dark-bg-2);
-  white-space: nowrap;
-}
-
-.CodeMirror-gutter {
-  background-color: unset !important;
-}
-
-/* Do some nice things with brackets */
-div.CodeMirror span.CodeMirror-matchingbracket {
-  color: var(--one-dark-blue);
-  border-bottom: 1px solid var(--one-dark-blue);
-  line-height: 1;
-}
-div.CodeMirror span.CodeMirror-nonmatchingbracket {
-  color: var(--one-dark-mono-1);
-  border-bottom: 1px solid var(--one-dark-red-1);
-  line-height: 0.55;
-}
-.CodeMirror-matchingtag {
-  /* background: rgba(255, 150, 0, .3); */
-  background: rgba(81, 182, 195, 0.3);
-}
-.CodeMirror-activeline-background {
-  background: #e8f2ff;
-}
-
-.CodeMirror-selected {
-  background: var(--one-dark-mono-3);
-}
-.CodeMirror-focused .CodeMirror-selected {
-  background: var(--one-dark-mono-3);
-}
-
-/* selected text highlight */
-/* Item selected in menu for files and what not */
-.jp-DirListing-item.jp-mod-selected {
-  /* color: white; */
-  color: var(--one-dark-mono-1);
-  background: var(--one-dark-bg-2);
-}
-
-/* Makes the running icon a tiny bit bigger */
-.jp-DirListing-item.jp-mod-running .jp-DirListing-itemIcon:before {
-  color: var(--one-dark-green);
-  content: '\25CF';
-  font-size: 12px;
-  position: relative;
-  width: 100%;
-  height: 100%;
-  top: -2px;
-  left: -8px;
-}
-
-/*.jp-Toolbar-item.jp-Toolbar-kernelStatus {
-    display: inline-block;
-    width: 32px;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-size: 16px;
-    color: black;
-    fill: green;
-}*/
-
-/* width */
-::-webkit-scrollbar {
-  width: 6px;
-  height: 6px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: rgba(0, 0, 0, 0);
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: var(--one-dark-mono-3);
-  border-radius: 10px;
-}
-
-/* Handle on hover */
-::-webkit-scrollbar-thumb:hover {
-  background: var(--one-dark-mono-3);
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb:active {
-  background: var(--one-dark-blue);
-}
-
-/* Center any plots e.g. Matplotlib plots */
-/* .p-Widget.jp-RenderedImage.jp-mod-trusted.jp-OutputArea-output {
-	display: table-cell;
-	text-align: center;
-	vertical-align: middle; 
-} */
-
-/* Highlighted line in tab-completion menu */
-.jp-Completer-item.jp-mod-active {
-  color: var(--one-dark-off-white);
-  background: var(--one-dark-gray-1);
-}
-
-/* Custom line rule */
-.jp-RenderedHTMLCommon hr {
-  display: block;
-  margin-top: 0.5em;
-  margin-bottom: 0.5em;
-  margin-left: 0em;
-  margin-right: 0em;
-  border-style: inset;
-  border-width: 1px;
-  border-top: 1px solid var(--one-dark-fg);
-  border-bottom: 1px solid var(--one-dark-fg);
-}
-
-/* Markdown inline code */
-.jp-RenderedHTMLCommon code,
-.jp-RenderedHTMLCommon pre {
-  padding: 1px 3px;
-  /* font-size: var() 1em !important; */
-}
-
-.jp-MarkdownOutput {
-  flex: 1 1 auto;
-  margin-top: 0;
-  margin-bottom: 0;
-  padding-left: var(--jp-code-padding);
-  padding-right: var(--jp-code-padding);
-  font-family: var(--markdown-font), 'Open Sans', sans-serif;
-}
-
-.cm-s-zenburn {
-  background-color: var(--one-dark-bg-1);
-  color: var(--one-dark-fg);
-}
-
-.cm-s-zenburn .CodeMirror-gutters {
-  /* background: var(--one-dark-bg-1) !important; */
-}
-
-.jp-Notebook .jp-Cell .jp-Collapser {
-  background: var(--one-dark-bg-1);
-  border-bottom-right-radius: 0px;
-  border-top-right-radius: 0px;
-  border-bottom-left-radius: 6px;
-  border-top-left-radius: 6px;
-}
-
-.jp-Notebook .jp-InputPrompt {
-  padding-top: 10px !important;
-}
-
-.jp-Notebook .jp-MarkdownCell .jp-InputPrompt {
-  background: var(--jp-inpromt-colour) !important;
-  color: var(--one-dark-mono-1);
-  /* font-family: var(--jp-cell-prompt-font-family); */
-  opacity: 1;
-  cursor: move;
-  font-weight: medium;
-}
-
-/* InPrompt when cell is selected */
-.jp-Notebook .jp-Cell .jp-InputPrompt {
-  background: var(--jp-inpromt-colour);
-  color: var(--one-dark-mono-2);
-  /* font-family: var(--jp-cell-prompt-font-family); */
-  opacity: 1;
-  cursor: move;
-  font-weight: medium;
-}
-
-.jp-Notebook .jp-Cell:not(.jp-mod-active) .jp-InputPrompt {
-  opacity: 1;
-  background: var(--jp-inpromt-colour);
-  font-weight: normal;
-  color: var(--one-dark-gray-2);
-}
-
-/* Rounding the tab corners */
-.lm-TabBar-content .lm-TabBar-tab,
-.p-TabBar-content .p-TabBar-tab {
-  border-top-left-radius: 5px;
-  border-top-right-radius: 5px;
-}
-
-/* Disabling bold keywords */
-.cm-keyword {
-  font-weight: normal !important;
-}
-
-/* Toggle code comment italics */
-.cm-comment {
-  /* font-style: normal !important; */
-}
-
-/* Remove automatic 4px padding at the top and bottom of cells */
-/* .CodeMirror-lines {
-  padding: 0px;
-} */
-
-/* Border radius of code cells */
-.jp-InputArea-editor {
-  /* border-top-right-radius: 3px;
-  border-bottom-right-radius: 3px; */
-  border-radius: 4px;
-  padding: var(--jp-code-padding);
-}
-
-/* Hover effects on Launcher cards */
-.jp-LauncherCard {
-  transition: transform 0.2s ease-in-out;
-}
-
-.jp-LauncherCard:hover {
-  transform: scale(1.1);
-}
-
-.MathJax_Preview {
-  color: var(--one-dark-mono-1) !important;
-}
-
-HTML,
+html,
 body,
 div,
 dl,
@@ -772,10 +420,10 @@ a {
   -webkit-font-smoothing: subpixel-antialiased !important;
 }
 
-/*-----------------------------------------------------------------------------
+/* -----------------------------------------------------------------------------
 | Copyright (c) Jupyter Development Team.
 | Distributed under the terms of the Modified BSD License.
-|----------------------------------------------------------------------------*/
+|---------------------------------------------------------------------------- */
 
 /* Set the default typography for monospace elements */
 tt,
@@ -786,4 +434,385 @@ pre {
   font-family: var(--jp-code-font-family);
   font-size: var(--jp-code-font-size) !important;
   line-height: var(--jp-code-line-height);
+}
+
+/* MAIN BACKGROUND COLOUR */
+.jp-Notebook {
+  background: var(--one-dark-bg-1);
+  padding-top: 11px;
+}
+
+/* Change the colour of linenumbers */
+.CodeMirror-linenumber {
+  padding: 0 3px 0 5px;
+  min-width: 20px;
+  text-align: center;
+  color: var(--one-dark-gray-2);
+  background-color: var(--one-dark-bg-2);
+  white-space: nowrap;
+}
+
+/* This is the region where the linenumbers are */
+.CodeMirror-gutters {
+  border-right: none;
+  background-color: var(--one-dark-bg-2);
+  white-space: nowrap;
+}
+
+.CodeMirror-gutter {
+  background-color: unset !important;
+}
+
+/* Markdown inline code */
+.jp-RenderedHTMLCommon code,
+.jp-RenderedHTMLCommon pre {
+  padding: 1px 3px;
+
+  /* font-size: var() 1em !important; */
+}
+
+.jp-MarkdownOutput {
+  flex: 1 1 auto;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: var(--jp-code-padding);
+  padding-right: var(--jp-code-padding);
+  font-family: var(--markdown-font), 'Open Sans', sans-serif;
+}
+
+.cm-s-zenburn {
+  background-color: var(--one-dark-bg-1);
+  color: var(--one-dark-fg);
+}
+
+.cm-s-zenburn .CodeMirror-gutters {
+  /* background: var(--one-dark-bg-1) !important; */
+}
+
+.jp-Notebook .jp-Cell .jp-Collapser {
+  background: var(--one-dark-bg-1);
+  border-radius: 6px 0 0 6px;
+}
+
+.jp-Notebook .jp-InputPrompt {
+  padding-top: 10px !important;
+}
+
+.jp-Notebook .jp-MarkdownCell .jp-InputPrompt {
+  background: var(--jp-inpromt-colour) !important;
+  color: var(--one-dark-mono-1);
+
+  /* font-family: var(--jp-cell-prompt-font-family); */
+  opacity: 1;
+  cursor: move;
+  font-weight: medium;
+}
+
+/* Preventing annoying line wrapping from overflows in tooltip (Shift+Tab) */
+.jp-Tooltip {
+  max-width: 660px !important;
+  overflow: auto;
+  border-radius: 4px;
+}
+
+.jp-Tooltip.jp-HoverBox > div.jp-Tooltip-content > pre {
+  white-space: pre !important;
+}
+
+/* CodeMirror Syntax Highlighting, unset bold */
+.jp-RenderedText pre .ansi-bold {
+  font-weight: normal !important;
+}
+
+/* ------------------------------------------------------------------- */
+
+/* StdError (Tracebacks)                                               */
+
+/* ------------------------------------------------------------------- */
+
+/* StdError background */
+.jp-OutputArea-output[data-mime-type='application/vnd.jupyter.stderr'] {
+  /* background: unset !important; */
+  background: rgba(226, 107, 115, 0.09) !important;
+}
+
+/* Traceback Syntax Highlighting */
+
+/* Headings, eg. `Docstring:` */
+.jp-OutputArea-output[data-mime-type='application/vnd.jupyter.stderr']
+  .ansi-red-fg,
+.jp-OutputArea-output[data-mime-type='application/vnd.jupyter.stderr']
+  .ansi-red-intense-fg {
+  color: var(--one-dark-red-1) !important;
+  font-weight: bold !important;
+}
+
+/* Punctuation & operators */
+.jp-OutputArea-output[data-mime-type='application/vnd.jupyter.stderr']
+  .ansi-yellow-fg,
+.jp-OutputArea-output[data-mime-type='application/vnd.jupyter.stderr']
+  .ansi-yellow-intense-fg {
+  color: var(--one-dark-cyan) !important;
+}
+
+/* Functions */
+.jp-OutputArea-output[data-mime-type='application/vnd.jupyter.stderr']
+  .ansi-cyan-fg {
+  color: var(--one-dark-blue) !important;
+}
+
+/* Numbers */
+.jp-OutputArea-output[data-mime-type='application/vnd.jupyter.stderr']
+  .ansi-cyan-intense-fg {
+  color: var(--one-dark-orange-1) !important;
+}
+
+/* Strings, brackets and some function arguments */
+.jp-OutputArea-output[data-mime-type='application/vnd.jupyter.stderr']
+  .ansi-blue-fg,
+.jp-OutputArea-output[data-mime-type='application/vnd.jupyter.stderr']
+  .ansi-blue-intense-fg {
+  color: var(--one-dark-green) !important;
+}
+
+/* Paths and keywords */
+.jp-OutputArea-output[data-mime-type='application/vnd.jupyter.stderr']
+  .ansi-green-fg,
+.jp-OutputArea-output[data-mime-type='application/vnd.jupyter.stderr']
+  .ansi-green-intense-fg {
+  color: var(--one-dark-purple) !important;
+}
+
+/* ------------------------------------------------------------------- */
+
+/* Other CodeMirror Syntax Highlighting                                */
+
+/* ------------------------------------------------------------------- */
+
+/* e.g. when you `?` something (to get help menu) */
+
+/* Headings, eg. `Docstring:` */
+.jp-RenderedText[data-mime-type='text/plain'] .ansi-red-fg,
+.jp-RenderedText[data-mime-type='text/plain'] .ansi-red-intense-fg {
+  color: var(--one-dark-blue) !important;
+}
+
+/* Punctuation & operators */
+.jp-RenderedText[data-mime-type='text/plain'] .ansi-yellow-fg,
+.jp-RenderedText[data-mime-type='text/plain'] .ansi-yellow-intense-fg {
+  color: var(--one-dark-cyan) !important;
+}
+
+/* Numbers */
+.jp-RenderedText[data-mime-type='text/plain'] .ansi-cyan-fg,
+.jp-RenderedText[data-mime-type='text/plain'] .ansi-cyan-intense-fg {
+  color: var(--one-dark-orange-1) !important;
+}
+
+/* Strings */
+.jp-RenderedText[data-mime-type='text/plain'] .ansi-blue-fg,
+.jp-RenderedText[data-mime-type='text/plain'] .ansi-blue-intense-fg {
+  color: var(--one-dark-green) !important;
+}
+
+/* Keywords */
+.jp-RenderedText[data-mime-type='text/plain'] .ansi-green-fg,
+.jp-RenderedText[data-mime-type='text/plain'] .ansi-green-intense-fg {
+  color: var(--one-dark-purple) !important;
+}
+
+/* Toolbar and right-click menu hover */
+li.lm-Menu-item.p-Menu-item:not([data-type='separator']):hover {
+  background-color: var(--one-dark-gray-1);
+}
+
+.lm-CommandPalette-item.lm-mod-disabled {
+  color: var(--one-dark-gray-3);
+}
+
+.lm-CommandPalette-item.lm-mod-active {
+  background: var(--one-dark-gray-1);
+}
+
+.lm-CommandPalette-item.lm-mod-active:hover:not(.lm-mod-disabled) {
+  background: var(--one-dark-gray-1);
+}
+
+.lm-CommandPalette-item:hover:not(.lm-mod-active, .lm-mod-disabled) {
+  background: var(--one-dark-gray-1);
+  cursor: pointer;
+}
+
+/* Do some nice things with brackets */
+div.CodeMirror span.CodeMirror-matchingbracket {
+  color: var(--one-dark-blue);
+  border-bottom: 1px solid var(--one-dark-blue);
+  line-height: 1;
+}
+
+div.CodeMirror span.CodeMirror-nonmatchingbracket {
+  color: var(--one-dark-mono-1);
+  border-bottom: 1px solid var(--one-dark-red-1);
+  line-height: 0.55;
+}
+
+.CodeMirror-matchingtag {
+  /* background: rgba(255, 150, 0, .3); */
+  background: rgba(81, 182, 195, 0.3);
+}
+
+.CodeMirror-activeline-background {
+  background: #e8f2ff;
+}
+
+.CodeMirror-selected {
+  background: var(--one-dark-mono-3);
+}
+
+.CodeMirror-focused .CodeMirror-selected {
+  background: var(--one-dark-mono-3);
+}
+
+/* selected text highlight */
+
+/* Item selected in menu for files and what not */
+.jp-DirListing-item.jp-mod-selected {
+  /* color: white; */
+  color: var(--one-dark-mono-1);
+  background: var(--one-dark-bg-2);
+}
+
+/* Makes the running icon a tiny bit bigger */
+.jp-DirListing-item.jp-mod-running .jp-DirListing-itemIcon::before {
+  color: var(--one-dark-green);
+  content: '\25CF';
+  font-size: 12px;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  top: -2px;
+  left: -8px;
+}
+
+/* .jp-Toolbar-item.jp-Toolbar-kernelStatus {
+    display: inline-block;
+    width: 32px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 16px;
+    color: black;
+    fill: green;
+} */
+
+/* width */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: rgba(0, 0, 0, 0);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: var(--one-dark-mono-3);
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: var(--one-dark-mono-3);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb:active {
+  background: var(--one-dark-blue);
+}
+
+/* Center any plots e.g. Matplotlib plots */
+
+/* .p-Widget.jp-RenderedImage.jp-mod-trusted.jp-OutputArea-output {
+	display: table-cell;
+	text-align: center;
+	vertical-align: middle; 
+} */
+
+/* Highlighted line in tab-completion menu */
+.jp-Completer-item.jp-mod-active {
+  color: var(--one-dark-off-white);
+  background: var(--one-dark-gray-1);
+}
+
+/* Custom line rule */
+.jp-RenderedHTMLCommon hr {
+  display: block;
+  margin: 0.5em 0;
+  border-style: inset;
+  border-width: 1px;
+  border-top: 1px solid var(--one-dark-fg);
+  border-bottom: 1px solid var(--one-dark-fg);
+}
+
+/* InPrompt when cell is selected */
+.jp-Notebook .jp-Cell .jp-InputPrompt {
+  background: var(--jp-inpromt-colour);
+  color: var(--one-dark-mono-2);
+
+  /* font-family: var(--jp-cell-prompt-font-family); */
+  opacity: 1;
+  cursor: move;
+  font-weight: medium;
+}
+
+.jp-Notebook .jp-Cell:not(.jp-mod-active) .jp-InputPrompt {
+  opacity: 1;
+  background: var(--jp-inpromt-colour);
+  font-weight: normal;
+  color: var(--one-dark-gray-2);
+}
+
+/* Rounding the tab corners */
+.lm-TabBar-content .lm-TabBar-tab,
+.p-TabBar-content .p-TabBar-tab {
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+
+/* Disabling bold keywords */
+.cm-keyword {
+  font-weight: normal !important;
+}
+
+/* Toggle code comment italics */
+.cm-comment {
+  /* font-style: normal !important; */
+}
+
+/* Remove automatic 4px padding at the top and bottom of cells */
+
+/* .CodeMirror-lines {
+  padding: 0px;
+} */
+
+/* Border radius of code cells */
+.jp-InputArea-editor {
+  /* border-top-right-radius: 3px;
+  border-bottom-right-radius: 3px; */
+  border-radius: 4px;
+  padding: var(--jp-code-padding);
+}
+
+/* Hover effects on Launcher cards */
+.jp-LauncherCard {
+  transition: transform 0.2s ease-in-out;
+}
+
+.jp-LauncherCard:hover {
+  transform: scale(1.1);
+}
+
+.MathJax_Preview {
+  color: var(--one-dark-mono-1) !important;
 }

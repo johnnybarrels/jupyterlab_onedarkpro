@@ -184,7 +184,8 @@
             "selector-no-vendor-prefix": null,
             "value-no-vendor-prefix": null,
             "alpha-value-notation": null,
-            "color-function-notation": null
+            "color-function-notation": null,
+            "selector-class-pattern": null
         }
     }
 }
