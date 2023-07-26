@@ -39,7 +39,7 @@ Extends to:
 pip install jupyterlab_onedarkpro
 ```
 
-or 
+or
 
 ```bash
 conda install jupyterlab_onedarkpro
