@@ -7,8 +7,6 @@ A full IDE build of [VSCode's One Dark Pro](https://marketplace.visualstudio.com
 
 ![one-dark-pro-preview](assets/img/jlab-one-dark-pro.png)
 
-### ‼ Currently looking for contributers to make this extension pip-installable ‼
-
 ## Beyond a simple syntax highlighter
 
 Features modern IDE padding, borders, hover effects and rounded corners.
