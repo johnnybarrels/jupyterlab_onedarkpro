@@ -1,0 +1,14 @@
+# Changes here will be overwritten by Copier; NEVER EDIT MANUALLY
+_commit: v4.0.9
+_src_path: https://github.com/jupyterlab/extension-template
+author_email: ''
+author_name: johnnybarrels
+has_binder: true
+has_settings: false
+kind: theme
+labextension_name: jupyterlab_onedarkpro
+project_short_description: One Dark Pro for JupyterLab
+python_name: jupyterlab_onedarkpro
+repository: https://github.com/onepan/jupyterlab_onedarkpro
+test: false
+
